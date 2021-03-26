@@ -1,0 +1,164 @@
+
+/*--- Body ---*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 18px;
+    line-height: 2rem;
+}
+
+/*--- Nav ---*/
+
+#header{
+  top: 0;
+}
+
+nav ul {  
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    display:flex;
+    
+}
+
+nav li {
+    display: inline;
+      margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  text-decoration: none;
+  
+}
+
+/*--- Img ---*/
+
+#header-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*--- Form/email ---*/
+.about-us-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 20px;
+    background-color:whitesmoke;
+}
+
+#form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 200px;
+    margin-top: 20px;
+    background-color:whitesmoke;
+}
+
+
+/*--- Video ---*/
+
+.sauce-video-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+/*--- chillis section ---*/
+
+.chillis-grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+
+    gap: 20px;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    font-style: italic;
+    font-size: ;
+}
+
+.chilli-box {
+    margin: 20px;
+    text-align: center;
+    border: 1px solid red;
+    padding: 5px;
+    margin: 5px;
+}
+
+.chilli-list {
+    font-weight: 300;
+    color: red;
+    margin-top: 4px;
+}
+
+ul {
+    list-style: none;
+
+}
+
+#our-chillis {
+    padding: 20px;
+}
+/*--- Product section ---*/
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+  text-align: center;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    gap: 20px;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.product-img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.product {
+  padding: 10px;
+}
+
+.fa-pepper-hot {
+   color: red;
+}
+
+@media  (max-width: 600px) {
+   body {
+       background-color: pink;
+   }
+}

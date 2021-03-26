@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #759194;
+    font-size: 18px;
+    line-height: 1em;
+
+}
+
+/*-----Headers----*/
+
+#title {
+  text-align: center;
+  color: red;
+  padding: 20px;
+  
+}
+
+.description {
+    text-align: center;
+    color: white;
+    padding: 10px;
+}
+
+h2 {
+    color: white;
+    background-color: black;
+    
+}
+
+.h2-banner {
+    border: 2px solid white;
+}
+
+
+/*-----Image-----*/
+
+#image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vh;
+  max-width: 100%;
+  height: auto;
+  border: 2px solid white;
+}
+
+#img-caption {
+    padding-top: 10px;
+}
+
+#img-div {
+    text-align: center;
+}
+
+/*-----Table-----*/
+
+td, th, h2 {
+  border: 1px solid black;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.tribute-table  tbody tr:nth-child(1) td:nth-child(1) {
+  width: 150px;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tribute-table {
+   margin-bottom: 10px;
+   background-color: #f9f1f1;
+}
+
+
+/*-----padding and styles-----*/
+
+.center {
+    text-align: center;
+     margin-top: 20px;
+    margin-bottom: 10px;
+
+}
+
+hr {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    
+
+}
+

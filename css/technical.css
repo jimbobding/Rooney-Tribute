@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url("..media/oranges-onblue.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: auto;
+
+}
+
+code {
+    background-color: lightgrey;
+}
+
+#navbar {
+    display: block;
+    position: fixed;
+    min-width: 310px; 
+}
+
+#navbar a {
+    text-decoration: none;
+    color: black;
+   
+}
+
+  #navbar  ul {
+    list-style-type: none;
+    border: 1px solid;
+    color: black;
+}
+
+ #navbar li {
+        border-top: 1px solid;
+        color: black;
+        padding: 10px 30px;
+}
+.ingredient-list {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+.main-section{
+    margin: 20px;
+    padding: 20px;
+
+}
+
+.cocktail-header {
+    font-size: 25px;
+    padding-bottom: 10px;
+    
+}
+
+p {
+    line-height: 25px;
+}
+
+.ingredient-header {
+    padding: 10px;
+}
+
+#main-doc {
+    margin-left: 310px;
+    position: absolute;
+}
+
+@media (max-width: 815px) {
+    #navbar {
+        position: absolute;
+        width: 100%;
+    }
+    #main-doc {
+    margin-left:0px;
+   margin-top: 270px;
+}
+}
