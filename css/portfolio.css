@@ -1,13 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&family=Roboto:wght@100&display=swap');
+
 * {
     padding: 0;
     margin: 0;
 }
 
-.project-image {
-    height: calc(100% - 6.8rem);
-    width: 100%; 
-    object-fit: cover;
+body {
+   font-family: 'Roboto', sans-serif;
+   font-size: 18px;
+
+
 }
+
+.nav-list {
+    display: flex;
+    padding: 2rem;
+    list-style: none;
+    font-size: 25px;
+    color: white;
+}
+
+
+/*-----Nav bar----*/
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background: #D90E18;
+    position: fixed;
+    z-index: 2;
+}
+
+.nav-link {
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+/*-----Welcome/about section----*/
 
 h2 a {
     text-decoration: none;
@@ -27,13 +57,11 @@ h2 a {
     width: 100%; 
     height: 100vh;
     background-color: #000;
-
-background: linear-gradient(90deg, rgba(23,24,23,1) 0%, rgba(33,35,35,1) 0%, rgba(35,28,28,1) 98%);
+    background: linear-gradient(90deg, rgba(23,24,23,1) 0%, rgba(33,35,35,1) 0%, rgba(35,28,28,1) 98%);
 }
 
 .welcome-grid {
     display: grid;
-
 }
 
 .box-1 {
@@ -42,7 +70,6 @@ background: linear-gradient(90deg, rgba(23,24,23,1) 0%, rgba(33,35,35,1) 0%, rgb
     background-color: red;
     grid-area: right;
 
- 
 }
 
 .box-2 {
@@ -75,7 +102,6 @@ background: linear-gradient(90deg, rgba(23,24,23,1) 0%, rgba(33,35,35,1) 0%, rgb
 
 .about-me {
     text-align: center;
-    
     background-color: wheat;
     width: 100vw;
     height: 100vh;
@@ -88,23 +114,20 @@ background: linear-gradient(90deg, rgba(23,24,23,1) 0%, rgba(33,35,35,1) 0%, rgb
     font-size: 3rem;
 }
 
-.card {
-    
+.about-card { 
   background-color: #E9E2D0;
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  box-shadow: -20px 0 35px -25px black, 20px 0 35px -25px black;
-    
-    
+  box-shadow: -20px 0 35px -25px black, 20px 0 35px -25px black;   
 }
 
-.card img {
+.about-card img {
   width: 200px;
   height: 300px;
   object-fit: cover;
-    border-radius: 75%;
+  border-radius: 75%;
   justify-content: center;
 }
 
@@ -113,9 +136,7 @@ background: linear-gradient(90deg, rgba(23,24,23,1) 0%, rgba(33,35,35,1) 0%, rgb
 }
 
 
-
-
-
+/*-----Projects section----*/
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -126,39 +147,21 @@ background: linear-gradient(90deg, rgba(23,24,23,1) 0%, rgba(33,35,35,1) 0%, rgb
     margin-bottom: 6rem;
 }
 
-.nav-list {
-    display: flex;
-    padding: 2rem;
-    list-style: none;
-    font-size: 25px;
-    color: white;
-}
-
-.nav {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
-    background: #D90E18;
-    position: fixed;
-    z-index: 2;
-}
-
-.nav-link {
-    padding: 15px;
-    color: white;
-    text-decoration: none;
+.project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%; 
+    object-fit: cover;
 }
 
 .project-section  {
     text-align: center;
     padding: 10rem 2rem;
-  
     background: linear-gradient(90deg, rgba(23,24,23,1) 0%, rgba(119,155,162,1) 0%, rgba(2,0,36,1) 98%);
 }
 
 .project-title {
     color: red;
-   font-size: 2rem;
+    font-size: 2rem;
     padding: 2rem 0.5rem;
     text-decoration: none;
     
@@ -169,11 +172,10 @@ background: linear-gradient(90deg, rgba(23,24,23,1) 0%, rgba(33,35,35,1) 0%, rgb
 }
 
 .project-tile {
-        background-color: peachpuff;
+    background-color: peachpuff;
 }
 
 .project-effect {
-    
     transition: 1s;
 }
 
@@ -182,6 +184,8 @@ background: linear-gradient(90deg, rgba(23,24,23,1) 0%, rgba(33,35,35,1) 0%, rgb
    box-shadow: -20px 0 35px -25px black, 20px 0 35px -25px black;
 }
 
+
+/*-----Contact section----*/
 .contact {
     height: auto;
     width: 100%;

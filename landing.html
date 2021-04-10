@@ -16,35 +16,50 @@
 
 <body>
     <header id="header">
-        <nav id="nav-bar">
-            <ul>
-                <li><a class="nav-link" href="#about-us"> Adidas</a></li>
-                <li><a class="nav-link" href="#our-chillis"> Nike</a></li>
-                <li><a class="nav-link" href="#contac"> Puma</a></li>
+
+        <nav id="nav-bar" class="nav">
+            <div class="logo">
+                <img id="header-img" src="media/devil.jpeg" width="100px" height="100px" alt="">
+            </div>
+            <ul class="nav-list">
+                <li><a class="nav-link" href="#about-us-section">About</a></li>
+                <li><a class="nav-link" href="#our-chillis-section">Chillis</a></li>
+                <li><a class="nav-link" href="#product-section">Products</a></li>
+                <li><a class="nav-link" href="#contact-section"> Contact</a></li>
             </ul>
         </nav>
-
-        <h1>Sunnys Bang Bang</h1>
-
-        <img id="header-img" src="media/it_bangs.jpg" alt="" width="300px" height="300px">
     </header>
 
-
+    <img id="header-img" class="header-img" src="media/it_bangs.jpg" alt="" width="300px" height="300px">
     <section id="about-us-section">
-        <div class="about-us-banner">
+        <div class="section-banner">
             <h2>About us</h2>
         </div>
-        <div class="about-us-card">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia deserunt incidunt tenetur voluptatum
-                exercitationem dolores dicta qui expedita illo quis ipsa nulla, facilis a consequuntur sunt modi, ut
-                numquam sequi.</p>
+        <div class="section-info-card">
+            <ul>
+                <li>Locally sourced materials</li>
+                <li>Free delivery</li>
+                <li>Made with a smile</li>
+            </ul>
         </div>
+
     </section>
 
+    <div class="sauce-video-container">
+        <iframe class="sauce-video" id="video" width="420" height="345"
+            src="https://www.youtube.com/watch?v=dRBkF8YtKs8">
+        </iframe>
+    </div>
 
 
     <section id="our-chillis-section">
-        <h2>Chilli's</h2>
+        <div class="section-banner">
+            <h2>Chilli's</h2>
+        </div>
+        <div class="section-info-card">
+            <p>We use a broad range of chilli's from all over the world to capture our unique flavours All ranging in
+                different heat and bringing there own distinct flavours.</p>
+        </div>
         <div class="chillis-grid">
             <div class="chilli-box">
                 <i class="fas fa-pepper-hot"></i>
@@ -107,10 +122,10 @@
     </section>
 
     <section id="product-section">
-        <h2>Products</h2>
+        <div class="section-banner">
+            <h2>Products</h2>
+        </div>
         <div class="product-grid">
-
-
             <div class="card product">
                 <img src="media/3-way-veg.jpg" class="product-img" alt="Avatar" style="width:100%">
                 <div class="container">
@@ -128,43 +143,91 @@
                 <img src="media/3 flavours.jpg" class="product-img" alt="Avatar" style="width:100%">
                 <div class="container">
                     <h4><b>Carolina Reaper</b></h4>
-                    <i class="fas fa-pepper-hot"></i>
-                    <i class="fas fa-pepper-hot"></i>
-                    <i class="fas fa-pepper-hot"></i>
-                    <i class="fas fa-pepper-hot"></i>
-                    <i class="fas fa-pepper-hot"></i>
+                    <p>Heat Level:
+                        <i class="fas fa-pepper-hot"></i>
+                        <i class="fas fa-pepper-hot"></i>
+                        <i class="fas fa-pepper-hot"></i>
+                        <i class="fas fa-pepper-hot"></i>
+                        <i class="fas fa-pepper-hot"></i></p>
                     <p>Size: 150ml</p>
                     <p>£7.5</p>
                 </div>
             </div>
 
-
             <div class="card product">
                 <img src="media/orgy-veg.jpg" class="product-img" alt="Avatar" style="width:100%">
                 <div class="container">
                     <h4><b>Mango Chilli</b></h4>
-                    <i class="fas fa-pepper-hot"></i>
-                    <i class="fas fa-pepper-hot"></i>
+                    <p>Heat Level:
+                        <i class="fas fa-pepper-hot"></i>
+                        <i class="fas fa-pepper-hot"></i></p>
                     <p>Size: 150ml</p>
                     <p>£6</p>
                 </div>
             </div>
         </div>
     </section>
-    <div class="sauce-video-container">
-        <iframe class="sauce-video" id="video" width="420" height="345"
-            src="https://www.youtube.com/watch?v=dRBkF8YtKs8">
-        </iframe>
-    </div>
 
-    <section id="form-section">
-        <form id="form" action="/https://www.freecodecamp.com/email-submit">
-            <label id="email-label" for="email">Email</label>
-            <input name="email" type="email" id="email" placeholder="Enter email" required>
-            <input type="submit" id="submit">
-        </form>
-    </section>
+    <footer>
+        <div class="footer footer-list">
+            <div class="footer-grid">
 
+                <ul id="contact-section" class="footer-list">
+                    <h4>Contacts</h4>
+                    <li>Sunnys Bang Bang</li>
+                    <li>123 Spice street</li>
+                    <li>Barcelona</li>
+                    <li>++789324459</li>
+                </ul>
+
+                <section id="form-section">
+                    <h4>Newsletter</h4>
+                    <p>Sign up or our monthly news letter to find out about anythig sauce related.</p>
+                    <form id="form" action="/https://www.freecodecamp.com/email-submit">
+                        <label id="email-label" for="email">Email</label>
+                        <input name="email" type="email" id="email" placeholder="Enter email" required>
+                        <input type="submit" id="submit">
+                    </form>
+                </section>
+                <ul class="footer-list">
+                    <h4>Quick Links</h4>
+                    <li><a class="nav-link" href="#about-us-section">About</a></li>
+                    <li><a class="nav-link" href="#our-chillis-section">Chillis</a></li>
+                    <li><a class="nav-link" href="#product-section">Products</a></li>
+                    <li><a class="nav-link" href="#contact-section"> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="social-media">
+            <ul class="social-links">
+                <li>
+                    <!-------Social media links------>
+                    <a target="_blank" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-f"></i>
+                        <span class="sr-only">Facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://twitter.com/explore">
+                        <i class="fab fa-twitter"></i>
+                        <span class="sr-only">Twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://uk.linkedin.com/">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span class="sr-only">Linkedin</span>
+                    </a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://www.instagram.com/">
+                        <i class="fab fa-instagram"></i>
+                        <span class="sr-only">Instagram</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
 
 </body>
 
